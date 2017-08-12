@@ -62,7 +62,7 @@ def getCallPrice(s_0, K, sigma, alpha, r, T, N=1000, M=1000):
 	plt.ylabel('Simulated Call Value')
 	plt.title('MC Call Valuation')
 	plt.grid(True)
-	pp = PdfPages('C:\Users\Steven\SkyDrive\Python Resources\Pics\MC Call Value.pdf')
+	pp = PdfPages('MC Call Value.pdf')
 	plt.savefig(pp, format='pdf')
 	pp.close()
 	plt.show()
