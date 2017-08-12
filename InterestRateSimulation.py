@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm 
 import numpy as np
 
+np.random.seed(100)
 pd.options.display.float_format = '{:,.2f}'.format
 
 #Initialize inputs:
