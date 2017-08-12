@@ -45,6 +45,13 @@ for i in range(len(rates)):
 
 		for k in range(years):
 		
+			'''The saving process is simple. I set this up so that saving started in the middle of the first 
+			   year (personal), so the initial capital is invested and half of the annual contriubtion is 
+			   added. For all subsequent years, the previous year's balance is accumulated with a stochastic
+			   market return and the annual contribution is added on top of that. Note the annual contribution
+			   is trended.
+			'''
+			
 			if k == 0: 
 				matrix[k][j] = init_cap + 0.5*annual_cont
 			elif k>0 and k<years-1:
